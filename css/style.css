@@ -1,0 +1,133 @@
+:root {
+    --primary-color: hsl(215, 51%, 70%);
+    --secundary-color: hsl(178, 100%, 50%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.wrapper {
+    width: 25em;
+    height: 40em;
+    padding: 2em 1.5em 10em;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1em;
+}
+
+.wrapper h3 {
+    color: white;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.wrapper h3:hover {
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+
+.wrapper > p {
+    color: var(--primary-color);
+    margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ethPrice p {
+    display: inline-block;
+    color: var(--secundary-color);
+    font-weight: 400;
+}
+
+.ethDays p {
+    margin-left: .5em;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%, .2);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.author img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 2em;
+    margin-right: 2em;
+}
+
+.author p {
+    color: white;
+}
+
+.author p:hover {
+    color: var(--secundary-color);
+    cursor: pointer;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.boxImg {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxImg img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.viewImg {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.viewImg:hover {
+    opacity: 1;
+    background-color: hsl(178, 100%, 50%, 60%);
+    border-radius: 1em;
+}
+
+.viewImg img {
+    width: 8em;
+    min-height: 8em;
+}
